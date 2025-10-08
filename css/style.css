@@ -47,7 +47,7 @@ body {
 }
 
 .wrapper {
-    max-width: 1600px;
+    max-width: 1280px;
     margin: 0 auto;
     background-color: var(--color-primary);
 }
@@ -58,7 +58,7 @@ body {
 
 .logo {
     width: 100%;
-    max-width: 400px;
+    max-width: 320px;
     height: 80px;
     border: 1px solid black;
 }
@@ -66,7 +66,7 @@ body {
 .social-media {
     padding-right: 20px;
     width: 100%;
-    max-width: 800px;
+    max-width: 640px;
     height: 80px;
     border: 1px solid black;
     display: flex;
@@ -78,7 +78,7 @@ body {
 .menu {
     background-color: black;
     width: 100%;
-    max-width: 400px;
+    max-width: 320px;
     height: 80px;
     border: 1px solid black;
     display: flex;
@@ -89,40 +89,42 @@ body {
 
 }
 
-.menu>li {
+.menu {
     display: flex;
-    list-style-type: none;
+    position: relative;
+
 }
-.menu>li>a>p {
+
+.menu>p {
     color: white;
-    font-style: ;
     font-weight: bold;
-    padding: 15px 0 0 10px;
-    float: right;
     margin: 0;
     text-align: center;
 
 }
 
-.menu>li>ul {
+.menu>ul {
     display: none;
+    list-style-type: none;
     margin: 0;
 }
 
-.menu>li>ul>li {
-    list-style: none;
 
-}
-
-.menu>li>ul>li>a {
+.menu>ul>li>a {
+    list-style-type: none;
     text-decoration: none;
     background-color: black;
     height: 40px;
     width: 100%;
     max-width: 400px;
     border: 1px solid white;
+    color: white;
 }
-.menu>li:hover>ul {
-    display: block;
 
+.menu:hover>ul {
+    display: block;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    padding-left: 0;
 }
