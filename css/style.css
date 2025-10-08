@@ -107,24 +107,30 @@ body {
     display: none;
     list-style-type: none;
     margin: 0;
+
+}
+.menu>ul>li {
+    background-color: black;
+    height: 40px;
+    width: 320px;
+
 }
 
-
 .menu>ul>li>a {
+    display: block;
     list-style-type: none;
     text-decoration: none;
     background-color: black;
-    height: 40px;
-    width: 100%;
-    max-width: 400px;
-    border: 1px solid white;
     color: white;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
 }
 
 .menu:hover>ul {
     display: block;
     position: absolute;
-    bottom: -100%;
-    left: 0;
+    bottom: -205%;
+    left: -1px;
     padding-left: 0;
 }
