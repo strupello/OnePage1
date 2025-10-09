@@ -95,7 +95,7 @@ body {
 
 }
 
-.menu>p {
+.menu-text {
     color: white;
     font-weight: bold;
     margin: 0;
@@ -103,20 +103,20 @@ body {
 
 }
 
-.menu>ul {
+.hamburger-menu-list {
     display: none;
     list-style-type: none;
     margin: 0;
 
 }
-.menu>ul>li {
+.hamburger-menu-index {
     background-color: black;
     height: 40px;
     width: 320px;
 
 }
 
-.menu>ul>li>a {
+.hamburger-menu-a {
     display: block;
     list-style-type: none;
     text-decoration: none;
@@ -127,7 +127,7 @@ body {
     text-align: center;
 }
 
-.menu:hover>ul {
+.menu:hover>.hamburger-menu-list {
     display: block;
     position: absolute;
     bottom: -205%;
