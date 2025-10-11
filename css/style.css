@@ -134,11 +134,23 @@ body {
     padding-left: 0;
 }
 
+.section1 {
+background-image: url('../img/section1-bg-img.png');
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  display: flex;
+
+}
+
+
+
 @media (min-width: 768px) {
-.social-media {
-    display: flex;
-}
-.menu {
-    max-width: 320px;
-}
+    .social-media {
+        display: flex;
+    }
+
+    .menu {
+        max-width: 320px;
+    }
 }
