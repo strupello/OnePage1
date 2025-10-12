@@ -51,6 +51,7 @@ body {
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 .wrapper {
     max-width: 1280px;
     margin: 0 auto;
@@ -150,21 +151,25 @@ body {
 }
 
 .p-line {
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     width: 50%;
+    font-weight: bold;
+    color: white;
+    font-size: var(--font-size-h4);
 }
 
-.hero p {
+.arrow-p {
     margin: 0;
     font-weight: bold;
     color: white;
     font-size: var(--font-size-h3);
 }
 
-.hero h1 {
+.h-class {
     margin: 0;
     font-weight: bold;
     font-size: 3rem;
@@ -210,6 +215,7 @@ body {
     height: auto;
     gap: 10px;
 }
+
 .information {
     display: flex;
     flex-direction: column;
@@ -217,6 +223,7 @@ body {
     max-width: 200px;
     height: auto;
 }
+
 .info-1 {
     position: relative;
     height: 200px;
@@ -230,24 +237,29 @@ body {
     color: black;
 
 }
-.info-h{
+
+.info-h {
     color: red;
     font-size: 4rem;
     padding: 0 0 10px 0;
     margin: 0;
 }
+
 .info-h-2 {
     color: lightseagreen;
 }
+
 .info-h-3 {
     color: indigo;
 }
-.text-info-1{
+
+.text-info-1 {
     color: burlywood;
     padding: 0;
     margin: 0;
 }
-.text-info-2{
+
+.text-info-2 {
     text-align: center;
     color: burlywood;
     max-width: 150px;
@@ -264,6 +276,7 @@ body {
     border-bottom-color: transparent;
     transform: rotate(-160deg);
 }
+
 .info-2::after {
     border: 4px solid lightseagreen;
     border-top-color: transparent;
@@ -271,10 +284,38 @@ body {
     border-bottom-color: transparent;
     transform: rotate(110deg);
 }
+
 .info-3::after {
     border: 4px solid indigo;
     border-bottom-color: transparent;
     transform: rotate(290deg);
+}
+
+.our-team {
+    background-image: url('../img/section-ourteam-bg-img.png');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.our-team-info {
+    height: 200px;
+    min-width: 300px;
+    max-width: 600px;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-line1 {
+    width: 43%;
+    font-size: var(--font-size-h5);
 }
 
 @media (min-width: 768px) {
@@ -312,8 +353,17 @@ body {
         height: 450px;
         gap: 0;
     }
+
     .information {
-    height: 350px;
-}
+        height: 350px;
+    }
+
+    .our-team-info {
+        width: 840px;
+
+    }
+    .p-line1 {
+        font-size: var(--font-size-h4);
+    }
 
 }
