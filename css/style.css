@@ -48,6 +48,7 @@ ul {
 
 body {
     background-color: var(--color-bg);
+    margin: 0;
 }
 
 .wrapper {
@@ -72,14 +73,9 @@ body {
 }
 
 .social-media {
-    padding-right: 20px;
-    width: 100%;
-    max-width: 640px;
-    height: 80px;
+
     display: none;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 10px;
+
 }
 
 .menu {
@@ -94,7 +90,7 @@ body {
     gap: 10px;
     padding-left: 20px;
     position: relative;
-
+    cursor: pointer;
 }
 
 
@@ -110,10 +106,11 @@ body {
 .hamburger-menu-list {
     display: none;
     list-style-type: none;
+    z-index: 10;
 
 }
 
-.hamburger-menu-index {
+.hamburger-menu-element {
     height: 40px;
     width: 100%;
 
@@ -136,17 +133,65 @@ body {
     display: block;
     position: absolute;
     top: 100%;
-    left: 0.5px;
+    right: 0.5px;
     padding-left: 0;
 }
 
-.section1 {
+.hero {
     background-image: url('../img/section1-bg-img.png');
     background-size: cover;
     background-position: center;
     height: 600px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.p-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 50%;
+}
+.hero p {
+    margin: 0;
+    font-weight: bold;
+    color: white;
+    font-size: var(--font-size-h3);
+}
+.hero h1 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 3rem;
+    color: white;
+}
+.button-hero {
+    margin: 10px 0 0 0;
+    color: white;
+    font-weight: bold;
+    font-size: var(--font-size-h6);
+    height: 40px;
+    width: 160px;
+    border-radius: var(--radius-md);
+    border: 1px solid white;
+    cursor: pointer;
+    background-color: transparent;
 
+}
+.p-line::before,
+.p-line::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background-color: white;
+}
+.hero-transition {
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    text-decoration: none;
 }
 
 
@@ -154,12 +199,28 @@ body {
 @media (min-width: 768px) {
     .social-media {
         display: flex;
+        padding-right: 20px;
+        width: 100%;
+        max-width: 640px;
+        height: 80px;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px;
     }
 
     .menu {
         max-width: 320px;
     }
+
     .top {
         flex-direction: row;
     }
+
+    .menu:hover>.hamburger-menu-list {
+        left: 0.5px;
+    }
+    .hero h1 {
+    font-size: 5rem;
+}
+
 }
