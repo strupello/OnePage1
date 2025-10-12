@@ -49,8 +49,8 @@ ul {
 body {
     background-color: var(--color-bg);
     margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
 .wrapper {
     max-width: 1280px;
     margin: 0 auto;
@@ -148,6 +148,7 @@ body {
     flex-direction: column;
     position: relative;
 }
+
 .p-line {
     display: flex;
     justify-content: center;
@@ -155,18 +156,21 @@ body {
     gap: 10px;
     width: 50%;
 }
+
 .hero p {
     margin: 0;
     font-weight: bold;
     color: white;
     font-size: var(--font-size-h3);
 }
+
 .hero h1 {
     margin: 0;
     font-weight: bold;
     font-size: 3rem;
     color: white;
 }
+
 .button-hero {
     margin: 10px 0 0 0;
     color: white;
@@ -180,6 +184,7 @@ body {
     background-color: transparent;
 
 }
+
 .p-line::before,
 .p-line::after {
     content: "";
@@ -187,6 +192,7 @@ body {
     height: 2px;
     background-color: white;
 }
+
 .hero-transition {
     position: absolute;
     left: 50%;
@@ -194,7 +200,82 @@ body {
     text-decoration: none;
 }
 
+.about-us-work-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    background-color: white;
+    height: auto;
+    gap: 10px;
+}
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+    height: auto;
+}
+.info-1 {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 3px solid rgb(218, 218, 218);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
 
+}
+.info-h{
+    color: red;
+    font-size: 4rem;
+    padding: 0 0 10px 0;
+    margin: 0;
+}
+.info-h-2 {
+    color: lightseagreen;
+}
+.info-h-3 {
+    color: indigo;
+}
+.text-info-1{
+    color: burlywood;
+    padding: 0;
+    margin: 0;
+}
+.text-info-2{
+    text-align: center;
+    color: burlywood;
+    max-width: 150px;
+}
+
+
+.info-1::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    border: 4px solid red;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    transform: rotate(-160deg);
+}
+.info-2::after {
+    border: 4px solid lightseagreen;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    transform: rotate(110deg);
+}
+.info-3::after {
+    border: 4px solid indigo;
+    border-bottom-color: transparent;
+    transform: rotate(290deg);
+}
 
 @media (min-width: 768px) {
     .social-media {
@@ -219,8 +300,20 @@ body {
     .menu:hover>.hamburger-menu-list {
         left: 0.5px;
     }
+
     .hero h1 {
-    font-size: 5rem;
+        font-size: 5rem;
+    }
+
+    .about-us-work-section {
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        height: 450px;
+        gap: 0;
+    }
+    .information {
+    height: 350px;
 }
 
 }
