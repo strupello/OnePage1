@@ -158,7 +158,7 @@ body {
     width: 50%;
     font-weight: bold;
     color: white;
-    font-size: var(--font-size-h4);
+    font-size: var(--font-size-h5);
 }
 
 .arrow-p {
@@ -171,7 +171,7 @@ body {
 .h-class {
     margin: 0;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: white;
 }
 
@@ -290,7 +290,7 @@ body {
     transform: rotate(290deg);
 }
 
-.our-team {
+.between-sections {
     background-image: url('../img/section-ourteam-bg-img.png');
     background-size: cover;
     background-position: center;
@@ -301,7 +301,7 @@ body {
 
 }
 
-.our-team-info {
+.between-sections-info {
     height: 200px;
     min-width: 300px;
     max-width: 600px;
@@ -313,8 +313,9 @@ body {
 }
 
 .p-line1 {
+    white-space: nowrap;
     width: 80%;
-    font-size: var(--font-size-h5);
+
 }
 
 .employees {
@@ -356,11 +357,11 @@ body {
 
 .employees-part3 {
     border-left-color: red;
-    border-right-color:red;
+    border-right-color: red;
 }
 
 .employees-part4 {
-    border-left-color:red;
+    border-left-color: red;
     border-right-color: red;
 }
 
@@ -381,6 +382,7 @@ body {
     padding: 10px 0 0 0;
     width: 210px;
 }
+
 .test1 {
     flex-direction: column;
 }
@@ -410,7 +412,7 @@ body {
     }
 
     .hero h1 {
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     .about-us-work-section {
@@ -425,43 +427,45 @@ body {
         height: 350px;
     }
 
-    .our-team-info {
-        width: 840px;
+    .between-sections-info {
+        width: 880px;
 
     }
 
     .p-line1 {
-        width: 43%;
-        font-size: var(--font-size-h4);
+        width: 40%;
+        font-size: var(--font-size-h5);
     }
 
     .employees {
-    flex-direction: column;
+        flex-direction: column;
 
-}
-.employees-section {
-    flex-direction: row;
-}
-.employees-part1 {
+    }
 
-    border-right-color: transparent;
-}
+    .employees-section {
+        flex-direction: row;
+    }
 
-.employees-part2 {
-    border-top-color: red;
-    border-left-color: transparent;
+    .employees-part1 {
 
-}
+        border-right-color: transparent;
+    }
 
-.employees-part3 {
-    border-left-color: red;
-    border-right-color:transparent;
-}
+    .employees-part2 {
+        border-top-color: red;
+        border-left-color: transparent;
 
-.employees-part4 {
-    border-left-color:transparent;
-    border-right-color: red;
-}
+    }
+
+    .employees-part3 {
+        border-left-color: red;
+        border-right-color: transparent;
+    }
+
+    .employees-part4 {
+        border-left-color: transparent;
+        border-right-color: red;
+    }
 
 
 }
