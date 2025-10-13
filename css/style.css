@@ -47,6 +47,7 @@ ul {
 }
 
 body {
+
     background-color: var(--color-bg);
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -74,9 +75,7 @@ body {
 }
 
 .social-media {
-
     display: none;
-
 }
 
 .menu {
@@ -314,8 +313,76 @@ body {
 }
 
 .p-line1 {
-    width: 43%;
+    width: 80%;
     font-size: var(--font-size-h5);
+}
+
+.employees {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 20px 0;
+}
+
+.employees-section {
+    margin: 0;
+    padding: 10px 0 0 0;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+.employees-part1 {
+    height: 225px;
+    width: 400px;
+    border: 2px solid white;
+    background-color: red;
+    border-right-color: transparent;
+}
+
+.employees-part2 {
+    height: 225px;
+    width: 400px;
+    border: 3px solid red;
+    border-top-color: transparent;
+    border-left-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.employees-part3 {
+    border-left-color: red;
+    border-right-color:red;
+}
+
+.employees-part4 {
+    border-left-color:red;
+    border-right-color: red;
+}
+
+.text1-emplo1 {
+    margin: 0;
+    padding: 0;
+    font-size: var(--font-size-h3);
+}
+
+.text1-emplo2 {
+    margin: 0;
+    padding: 0 0 15px 0;
+    border-bottom: 2px solid red;
+}
+
+.text1-emplo3 {
+    margin: 0;
+    padding: 10px 0 0 0;
+    width: 210px;
+}
+.test1 {
+    flex-direction: column;
 }
 
 @media (min-width: 768px) {
@@ -362,8 +429,39 @@ body {
         width: 840px;
 
     }
+
     .p-line1 {
+        width: 43%;
         font-size: var(--font-size-h4);
     }
+
+    .employees {
+    flex-direction: column;
+
+}
+.employees-section {
+    flex-direction: row;
+}
+.employees-part1 {
+
+    border-right-color: transparent;
+}
+
+.employees-part2 {
+    border-top-color: red;
+    border-left-color: transparent;
+
+}
+
+.employees-part3 {
+    border-left-color: red;
+    border-right-color:transparent;
+}
+
+.employees-part4 {
+    border-left-color:transparent;
+    border-right-color: red;
+}
+
 
 }
